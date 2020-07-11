@@ -9,7 +9,7 @@
     </p>
 
     <router-link to="/" class="mt-5 text-xl text-green-600 hover:underline">
-        Volver a la p'agina de inicio
+      Volver a la p'agina de inicio
     </router-link>
   </div>
 </template>

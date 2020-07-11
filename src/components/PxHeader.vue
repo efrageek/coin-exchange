@@ -5,7 +5,7 @@
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <pxIcon class="mr-2" />
           <span class="font-semibold text-xl tracking-tight">
-            Platzi Exchange
+            Coin Exchange
           </span>
         </div>
         <div
