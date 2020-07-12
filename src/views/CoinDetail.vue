@@ -117,15 +117,13 @@ export default {
     getCoin() {
       const id = this.$route.params.id;
       Promise.all([api.getAsset(id), api.getAssetHistory(id)])
-      .then(
-        ([asset, history]) => {
+        .then(([asset, history]) => {
           this.asset = asset;
           this.history = history;
-        }
-      )
-      .catch(e => {
-        console.log(e)
-      })
+        })
+        .catch(e => {
+          console.log(e);
+        });
     }
   }
 };
