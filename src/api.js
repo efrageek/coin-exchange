@@ -38,7 +38,25 @@ async function getAssetHistory(coin) {
   return data;
 }
 
+async function getMarket(coin) {
+  const dataFetched = await fetch(
+    `${URL}/assets/${coin}/markets?limit=5)`
+  );
+  const dataJSON = await dataFetched.json();
+  const data = await dataJSON.data;
+  return data;
+}
+
+async function getExchange(id) {
+  const dataFetched = await fetch(`${URL}/exchanges/${id}`);
+  const dataJSON = await dataFetched.json();
+  const data = await dataJSON.data;
+  return data;
+}
+
 export default {
+  getExchange,
+  getMarket,
   getAssets,
   getAsset,
   getAssetHistory
