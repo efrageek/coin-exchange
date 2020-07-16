@@ -23,12 +23,15 @@ export default {
 
   created() {
     this.isLoading = true;
-    api.getAssets().then(assets => {
-      this.assets = assets;
-      console.log(this.assets);
-    }).finally(() => {
-      this.isLoading = false
-    });
+    api
+      .getAssets()
+      .then(assets => {
+        this.assets = assets;
+        console.log(this.assets);
+      })
+      .finally(() => {
+        this.isLoading = false;
+      });
   }
 };
 </script>
