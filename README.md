@@ -8,6 +8,7 @@ This project was made with the purpose of learn the basics of Vue.js 2.x at [Pla
 - **[Numeral.js](http://numeraljs.com/):** THis was used for currency and percentage formatting.
 - **[chartkick](https://chartkick.com/vue):** Used for show historic prices of cryptocurrencies in details section.
 - **[ESlint](https://eslint.org/):** For code formattig.
+- **Tailwind.css**
 
 # Want to setup in your local machine? 
 
